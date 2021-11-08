@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>OILX</title>
+</head>
+
+<body>
+  <!-- top-slider starts here -->
+  <!-- <div class="menu-btn" onclick="openMenu()">
+    <div class="menu-btn__burger" id="menu" onclick="openMenu()"></div>
+  </div> -->
+
+
+  <!-- <div id="menu-bar">
+    <ul class="nav" id="nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</div> -->
+  <!-- top-slider ends here -->
+
+  <!-- header starts here -->
+  <header id="nav-bar" class="menu-area">
+
+    <div class="first-item"><a href="#"><img style="height: 3vw;" ; src="oilx.svg" alt=""></a></div>
+
+    <div class="second-wrapper">
+      <div class="wrapper">
+        <ul>
+          <li><a href="#"><img src="uk.png">EN</a>
+            <ul class="line-1">
+              <li><a><img src="spain.png">ES</a></li>
+              <li><a><img src="china.png">CN</a></li>
+              <li><a><img src="saudia.png">SA</a></li>
+            </ul>
+          </li>
+          <li><a class="ani-btn" href="">REQUEST DEMO</a></li>
+          <li><a class="ani-btn" href="">LOGIN</a></li>
+        </ul>
+      </div>
+
+      <div class="menu-btn" onclick="openMenu()">
+        <div class="menu-btn__burger" id="menu"></div>
+      </div>
+
+      <div id="top-slider">hello
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+
+  </header>
+ 
+  <!-- header ends here -->
+
+  <!-- parallax starts here -->
+
+  <div id="parallax-wrapper">
+    <div id="a" class="panels">
+      <video id="videoBG" autoplay muted>
+        <source src="oil.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div id="b" class="panels">Scrolling-Panel 1</div>
+    <div id="c" class="panels">Scrolling-Panel 2</div>
+    <div id="d" class="panels">Scrolling-Panel 3</div>
+  </div>
+
+  <!-- parallax ends here -->
+
+
+  <script>
+    function scrollValue() {
+      var navbar = document.getElementById("nav-bar");
+      var scroll = window.scrollY;
+      if (scroll < 200) {
+        navbar.classList.remove('BgColour');
+      } else {
+        navbar.classList.add('BgColour');
+      }
+    }
+    window.addEventListener('scroll', scrollValue);
+
+
+
+    const menuBtn = document.querySelector('.menu-btn');
+    let menuOpen = false;
+    menuBtn.addEventListener('click', () => {
+      if (!menuOpen) {
+        menuBtn.classList.add('open');
+        menuOpen = true;
+      } else {
+        menuBtn.classList.remove('open');
+        menuOpen = false;
+      }
+    });
+    window.addEventListener('scroll', scrollValue);
+
+
+    function openMenu() {
+      document.getElementById("top-slider").classList.toggle("change");
+    }
+
+
+  </script>
+</body>
+
+</html>

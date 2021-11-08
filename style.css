@@ -1,0 +1,209 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+/* parallax starts here */
+.parallax-wrapper{
+  position: relative;
+  top:0px;
+  left: 0px;
+}
+.panels {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+#a{
+  z-index: 1;
+}
+#b{ 
+  top: 100vh;
+  z-index: 2;
+  background-color: white;
+}
+#c{
+   background:pink;
+   top: 200vh;
+   z-index: 3;
+}
+#d{  
+  background: url("ship.jpg");
+  background-attachment: fixed;
+  top: 300vh;
+  z-index: 4;  
+}
+/* parallax ends here */
+
+/* header starts here */
+.menu-area {
+    position:fixed;
+    top:0px;
+    right: 0;
+    left: 0;
+    background: transparent;
+    border:2px solid red;
+    display: flex;
+    align-items: center;
+    padding: 20px 6%;
+    width: 100%;
+    z-index: 5;
+    box-sizing: border-box;
+}
+.menu-area .second-wrapper .wrapper{
+  border: 2px solid green;
+}
+.menu-area .second-wrapper{
+  margin-left: auto;
+  display: flex;
+}
+.menu-area .second-wrapper img{
+    margin-right: 10px;
+    height: 14px;
+  }
+.menu-area .second-wrapper a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: 'Termina demi', sans-serif;
+  font-weight:600;
+  background: none;
+  padding:10px 15px;
+  color:white;
+  letter-spacing: 1.25px;
+}
+.menu-area .second-wrapper .wrapper ul{
+   list-style: none;
+   display: flex;
+   padding: 0px;
+   margin: 0px;
+}
+.menu-area .second-wrapper li{
+  position: relative;
+  text-align: center;
+  margin-right: 70px;
+}
+.menu-area .second-wrapper .wrapper .line-1{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+}
+.menu-area .second-wrapper .wrapper ul li .line-1{
+  display: none;
+}
+.menu-area .second-wrapper .wrapper li:hover .line-1{
+  display: block;
+}
+.menu-area .second-wrapper .wrapper li:hover a {  /*:not(.ani-btn) */
+  background: white;
+  color: black;
+}
+.menu-area .second-wrapper .wrapper .ani-btn{
+  transition: all 0.5s ease 0s;
+  display: block;
+}
+.menu-area .second-wrapper .wrapper .ani-btn::after{
+  content: "";
+  position: absolute;
+  top:0;
+  left:0px;
+  width: 0%;
+  height: 100%;
+  background: rgb(240, 240, 240) !important;
+  z-index: -1;
+  transition: all 0.2s ease 0s;
+}
+.menu-area .second-wrapper .wrapper .ani-btn:hover{
+  color: black;
+}
+.menu-area .second-wrapper .wrapper .ani-btn:hover::after{
+  width: 100%;
+}
+.BgColour {
+    transition: all 1s;
+    background-color: rgb(14, 26, 32);
+  }
+
+/* top slider starts here */
+.menu-area .second-wrapper  .menu-btn {
+    position:  relative;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 50px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    border: 2px solid pink;
+  }
+  .menu-btn__burger {
+    width: 50px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+  }
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+  }
+  .menu-btn__burger::before {
+    transform: translateY(-10px);
+  }
+  .menu-btn__burger::after {
+    transform: translateY(10px);
+  }
+  /* ANIMATION */
+  .menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+  .menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  .menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+
+
+
+ #top-slider{
+  position: absolute;
+  top:0px;
+  right: 0px;
+  background-color: saddlebrown;
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  z-index: -1;
+  transform: translateY(-80%);
+  }
+  .change{
+    transform: translateY(0%);
+    transition: all 2s ease-in-out;
+  }
+
+
+/* top slider ends here */
