@@ -1,117 +1,349 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>OILX</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600;700;900&display=swap"
+		rel="stylesheet">
+	<title>OILX.html</title>
+
 </head>
 
 <body>
-  <!-- top-slider starts here -->
-  <!-- <div class="menu-btn" onclick="openMenu()">
-    <div class="menu-btn__burger" id="menu" onclick="openMenu()"></div>
-  </div> -->
+	<!-- welcome page starts here -->
+
+	<div class="welcome" id="blurDiv">
+		<img id="zoomOut" src="oilx.svg" alt="">
+	  </div>
+
+	<!-- welcome page ends here -->
+
+	<div id="cursor"></div>
+
+	<!-- header starts here -->
+	<header id="nav-bar" class="menu-area">
+
+		<div class="first-item"><a href="#"><img style="height: 3vw;" ; src="oilx.svg" alt=""></a></div>
+
+		<div class="second-wrapper">
+
+			<div class="wrapper">
+				<ul>
+					<li><a href="#"><img src="uk.png">EN</a>
+						<ul class="line-1">
+							<li><a><img src="spain.png">ES</a></li>
+							<li><a><img src="china.png">CN</a></li>
+							<li><a><img src="saudia.png">SA</a></li>
+						</ul>
+					</li>
+					<li><a class="ani-btn" href="">REQUEST DEMO</a></li>
+					<li><a class="ani-btn" href="">LOGIN</a></li>
+				</ul>
+			</div>
+
+			<!-- top slider begins here -->
+			<div id="menu-bar" class="menu-btn">
+				<div id="menu" class="menu-btn__burger"></div>
+			</div>
+
+			<div class="menu-bg" id="menu-bg">
+				<ul class="nav" id="nav">
+					<li id="same"><a href="#">SOLUTIONS <i style="font-weight: lighter; color: rgb(194, 192, 192);"
+								class="fas fa-chevron-down rotate-2"></i></a>
+						<ul id="same-list">
+							<li><a>OILX PLATFORM</a></li>
+							<li><a>OILX INTELLIGENCE</a></li>
+							<li><a>OILX RESEARCH</a></li>
+						</ul>
+					</li>
+					<li id="same1"><a href="#">NEWS</a></li>
+					<li id="same2"><a href="#">ABOUT</a></li>
+					<li id="same3"><a href="#">CONTACT</a></li>
+					<li id="same4"><a href="#">DPW21</a></li>
+				</ul>
+			</div>
+			<!-- top slider ends here -->
+
+	</header>
+	<!-- header ends here -->
+
+	<!-- parallax starts here -->
+
+	<div id="parallax-wrapper">
+		<!-- parallax wrapper a starts here -->
+		<div id="a videoDiv" class="panels">
+
+			<video id="video1" preload="" autoplay="" muted="" playsinline="" loop="">
+				<source src="oil.mp4" type="video/mp4">
+			</video>
+
+			<div id="videoMessage" class="styling">
+
+				<div class="part-a">
+
+					<div class="vM-1">
+						<nav>
+							<a href="#" class="hover-this">
+								<h1>WE COUNT THE<br /> WORLD'S OIL.<br />ONE BARREL<br /> AT A TIME.</h1>
+							</a>
+							<div class="cursor"></div>
+						</nav>
+					</div>
 
 
-  <!-- <div id="menu-bar">
-    <ul class="nav" id="nav">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Gallery</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </div>
-</div> -->
-  <!-- top-slider ends here -->
+					<div class="vM-2">
+						<div class="center">
+							<div class="pulse"><i class="fas fa-caret-right fa-5x"></i></div>
+						</div>
+					</div>
 
-  <!-- header starts here -->
-  <header id="nav-bar" class="menu-area">
+				</div>
 
-    <div class="first-item"><a href="#"><img style="height: 3vw;" ; src="oilx.svg" alt=""></a></div>
+				<div class="two-img">
+					<div> <img src="logo-1.png"> </div>
+					<div><img src="logo-2.png"> </div>
+					<div><span><i class="fas fa-bookmark fa-2x"></i></span></div>
+				</div>
 
-    <div class="second-wrapper">
-      <div class="wrapper">
-        <ul>
-          <li><a href="#"><img src="uk.png">EN</a>
-            <ul class="line-1">
-              <li><a><img src="spain.png">ES</a></li>
-              <li><a><img src="china.png">CN</a></li>
-              <li><a><img src="saudia.png">SA</a></li>
-            </ul>
-          </li>
-          <li><a class="ani-btn" href="">REQUEST DEMO</a></li>
-          <li><a class="ani-btn" href="">LOGIN</a></li>
-        </ul>
-      </div>
+			</div>
+		</div>
+		<!-- parallax wrapper a ends here -->
 
-      <div class="menu-btn" onclick="openMenu()">
-        <div class="menu-btn__burger" id="menu" onclick="openMenu()"></div>
-      </div>
+		<!-- parallax wrapper b starts here -->
+		<div id="b" class="panels">
+			<p class="p-1" id="p-1">Trading organisations replicate the same basic oil analytics tasks, often wasting
+				valuable resources.</p>
 
-      <div id="top-slider">hello
-        <ul>
-          <li></li>
-        </ul>
-      </div>
+			<p class="p-2">Most oil trading organisations are replicating the same basic oil analytics tasks, such as
+				cargo tracking, refinery turnaround monitoring and supply-demand balances. Much of this analysis
+				underpins strategic trading decisions, yet is resource heavy and based on disparate or largely
+				historical data sources.</p>
+		</div>
+		<!-- parallax wrapper b ends here -->
 
-  </header>
- 
-  <!-- header ends here -->
+		<!-- parallax wrapper c starts here -->
 
-  <!-- parallax starts here -->
+		<div id="c" class="panels"></div>
 
-  <div id="parallax-wrapper">
-    <div id="a" class="panels">
-      <video id="videoBG" autoplay muted>
-        <source src="oil.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div id="b" class="panels">Scrolling-Panel 1</div>
-    <div id="c" class="panels">Scrolling-Panel 2</div>
-    <div id="d" class="panels">Scrolling-Panel 3</div>
-  </div>
+		<!-- parallax wrapper c ends here -->
 
-  <!-- parallax ends here -->
+		<!-- parallax wrapper d starts here -->
+
+		<div id="d" class="panels">
+			<p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="600" data-aos-offset="300">OilX
+				performs your analytics to the highest standard saving you time and increasing your productivity.</p>
+		</div>
+
+		<!-- parallax wrapper d ends here -->
 
 
-  <script>
-    function scrollValue() {
-      var navbar = document.getElementById("nav-bar");
-      var scroll = window.scrollY;
-      if (scroll < 200) {
-        navbar.classList.remove('BgColour');
-      } else {
-        navbar.classList.add('BgColour');
-      }
-    }
-    window.addEventListener('scroll', scrollValue);
+		<!-- parallax wrapper e starts here -->
+		<div id="e" class="panels">
+
+			<div class="e1" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="400" data-aos-offset="100">
+				<h1>SOLUTIONS</h1>
+			</div>
+
+			<div class="e2">
+				<div class="e-div" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="500" data-aos-offset="100">
+					<div>
+						<h1>O1</h1>
+						<hr style="width: 80px; color: #cfd1d2; ">
+					</div>
+					<div>
+						<h2>OilX <br />Platform</h2>
+					</div>
+					<div>
+						<p style="color: #5b5b5c; ">The world's first digital oil analyst</p>
+					</div>
+					<div>
+						<h3>LEARN MORE</h3>
+					</div>
+				</div>
+
+				<div class="e-div" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="600" data-aos-offset="100">
+					<div>
+						<h1>O1</h1>
+						<hr style="width: 80px; color: #cfd1d2; ">
+					</div>
+					<div>
+						<h2>OilX <br />Platform</h2>
+					</div>
+					<div>
+						<p>The world's first digital oil analyst</p>
+					</div>
+					<div>
+						<h3>LEARN MORE</h3>
+					</div>
+				</div>
+
+				<div class="e-div" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="700" data-aos-offset="100">
+					<div>
+						<h1>O1</h1>
+						<hr style="width: 80px; color: #cfd1d2; ">
+					</div>
+					<div>
+						<h2>OilX <br />Platform</h2>
+					</div>
+					<div>
+						<p>The world's first digital oil analyst</p>
+					</div>
+					<div>
+						<h3>LEARN MORE</h3>
+					</div>
+				</div>
+			</div>
+
+		</div>
+         <!-- parallax wrapper e ends here -->
+
+
+		 <!-- parallax wrapper f starts here -->
+
+		 <div id="f" class="panels">
+
+             <div class="divf-1"><h1 data-aos="fade-zoom-in"
+				data-aos-easing="ease-in-back"
+				data-aos-delay="100"
+				data-aos-offset="0">PARTNERS</h1></div>
+
+			 <div class="divf-2">
+				 <div><img src="signal.svg" alt="" data-aos="fade-zoom-in"
+					data-aos-easing="ease-in-back"
+					data-aos-delay="200"
+					data-aos-offset="0"></div>
+				 <div><img src="esa.svg" alt="" data-aos="fade-zoom-in"
+					data-aos-easing="ease-in-back"
+					data-aos-delay="300"
+					data-aos-offset="0"></div>
+				 <div><img src="aresys.svg" alt="" data-aos="fade-zoom-in"
+					data-aos-easing="ease-in-back"
+					data-aos-delay="400"
+					data-aos-offset="0"></div>
+				 <div><img src="dbx.svg" alt="" data-aos="fade-zoom-in"
+					data-aos-easing="ease-in-back"
+					data-aos-delay="400"
+					data-aos-offset="0"></div>
+			 </div>
+
+			 <div class="divf-3">
+				 <h1 data-aos="fade-zoom-in"
+				 data-aos-easing="ease-in-back"
+				 data-aos-delay="500"
+				 data-aos-offset="0">KEY DATA SOURCES</h1>
+			 </div>
+
+			 <div class="divf-4">
+				<div><img src="jodi.png" alt="" data-aos="fade-zoom-in"
+					data-aos-easing="ease-in-back"
+					data-aos-delay="600"
+					data-aos-offset="0"></div>
+				<div><img src="iir.png" alt="" data-aos="fade-zoom-in"
+					data-aos-easing="ease-in-back"
+					data-aos-delay="700"
+					data-aos-offset="0"></div>
+				<div><img src="oilchem.png" alt="" data-aos="fade-zoom-in"
+					data-aos-easing="ease-in-back"
+					data-aos-delay="800"
+					data-aos-offset="0"></div>
+				<div><img src="geo.png" alt="" data-aos="fade-zoom-in"
+					data-aos-easing="ease-in-back"
+					data-aos-delay="900"
+					data-aos-offset="0"></div>
+			</div>
+
+
+			 
+			 <div class="divf-5">
+				 <div><img src="2020.png"></div>
+				 <div><img src="fia.png"></div>
+				 <div class="img3"><img src="award.png"></div>
+				 <div class="img4"><img src="tech.png"></div>
+				 <div class="img5"><img src="risk.png"></div>
+				 <div class="img6"><img src="energy.svg"></div>
+			 </div>
+
+
+			 <div class="divf-6">
+
+				<div class="divf-61">
+                   <a href="">SOLUTIONS</a>
+				   <a href="">NEWS</a>
+				   <a href="">ABOUT</a>
+				   <a href="">CONTACT</a>
+				</div>
+
+				<div class="divf-62">
+                    <a href="">LINKEDIN</a>
+				   <a href="">TWITTER</a>
+				   <a href="">DPW21</a>
+				</div>
+
+				<div class="divf-63">
+                    <div class="img3"><img src="2020.png"></div>
+				    <div class="img4"><img src="fia.png"></div>
+				</div>
+
+				<div class="divf-64">
+					<div class="img3"><img src="2020.png"></div>
+				    <div class="img4"><img src="fia.png"></div>
+					<div class="img3"><img src="award.png"></div>
+					<div class="img4"><img src="tech.png"></div>
+					<div class="img5"><img src="risk.png"></div>
+					<div class="img6"><img src="energy.svg"></div>
+				</div>
+
+				<div class="divf-65">
+                    <div class="img3"><img src="award.png"></div>
+				 <div class="img4"><img src="tech.png"></div>
+				</div>
+
+				<div class="divf-66">
+					<div class="img5"><img src="risk.png"></div>
+					<div class="img6"><img src="energy.svg"></div>
+				</div>
+
+				<div class="divf-67">
+					<a href="">PRIVACY</a>
+					<a href="">TERMS</a>
+					<a href="">COOKIES</a>
+					<a>©oilx</a>
+				</div>
+
+			 </div>
+
+		 </div> 
+		 <!-- parallax wrapper f ends here-->
+
+	</div>
+
+	<!-- parallax ends here -->
 
 
 
-    const menuBtn = document.querySelector('.menu-btn');
-    let menuOpen = false;
-    menuBtn.addEventListener('click', () => {
-      if (!menuOpen) {
-        menuBtn.classList.add('open');
-        menuOpen = true;
-      } else {
-        menuBtn.classList.remove('open');
-        menuOpen = false;
-      }
-    });
-    window.addEventListener('scroll', scrollValue);
 
 
-    function openMenu() {
-      document.getElementById("top-slider").classList.toggle("change");
-    }
 
 
-  </script>
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<script>
+		AOS.init();
+	</script>
+
+
+	<script src="main.js"></script>
 </body>
 
 </html>
